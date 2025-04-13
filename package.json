@@ -26,7 +26,7 @@
     "sass": "^1.71.1",
     "sass-loader": "^16.0.4",
     "style-loader": "^4.0.0",
-    "tailwindcss": "^4.0.0",
+    "tailwindcss": "^4.1.3",
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.0"
@@ -34,7 +34,7 @@
   "dependencies": {
     "@alpinejs/collapse": "^3.14.8",
     "@tabler/icons-webfont": "^3.29.0",
-    "@tailwindcss/postcss": "^4.0.0",
+    "@tailwindcss/postcss": "^4.1.3",
     "@yaireo/ui-range": "^2.1.15",
     "alpinejs": "^3.14.8",
     "swiper": "^11.2.1"

@@ -51,8 +51,7 @@
     @apply py-2 px-4 rounded-lg  border  inline-flex hover:bg-green-300 duration-300;
   }
   .btn-primary {
-    @extend .btn;
-    @apply bg-green-500 pl-6 xl:pl-8 gap-4 uppercase;
+    @apply bg-green-500 pl-6 xl:pl-8 uppercase inline-flex items-center ease-linear justify-center gap-2 rounded-full p-2 font-semibold text-neutral-0 transition-all duration-300 cursor-pointer;
     i {
       @apply size-8 xxl:size-12 flex items-center justify-center bg-yellow-200 text-xl xxl:text-2xl rounded-full text-neutral-700 duration-300;
     }
@@ -125,21 +124,8 @@
           @apply inline-flex py-1.5 lg:text-base duration-300 font-medium;
         }
       }      
-    }
-    
-    @media (width >= 992px) {      
-      .dropdown-menu {
-        @apply bg-neutral-0 min-w-[200px] max-h-[250px] absolute left-0 top-[130%] opacity-0 invisible p-3 duration-300 lg:px-5 rounded-lg border border-neutral-100 overflow-y-auto;
-        li a {
-          @apply inline-flex py-1.5 lg:text-base duration-300 font-medium;
-        }
-      }
-      &:hover {
-        .dropdown-menu {
-          @apply visible opacity-100 top-full;
-        }
-      }
-    }
+    }    
+   
   }
   .topbar-btn {
     @apply flex items-center justify-center text-xl xl:text-2xl border border-neutral-40 size-12 xxl:size-[64px] rounded-full;
@@ -351,5 +337,15 @@
 .max-un{
   @media (min-width:1400px){
     max-width: unset;
+  }
+}
+
+@media (max-width:991px){
+  .dropdown-item .dropdown-menu{
+    @apply max-h-0 p-0 border-0;
+  }
+  .dropdown-item.active .dropdown-menu{
+    max-height: 250px !important;
+    @apply p-3 border border-neutral-100;
   }
 }

@@ -1,6 +1,4 @@
-import './scss/index.scss'
-
-import './scss/index.scss'
+import './input.css'
 
 const searchBtn = document.querySelector(".search-btn");
 const searchBar = document.querySelector(".search-bar");
